@@ -6,8 +6,8 @@ resources:
 patches:
   - patch: |
       - op: replace
-        path: /spec/interval
-        value: 5m0s
+        path: /spec/prune
+        value: false
     target:
-      kind: GitRepository
+      kind: Kustomization
       name: flux-system
